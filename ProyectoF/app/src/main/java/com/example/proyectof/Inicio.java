@@ -22,9 +22,16 @@ public class Inicio extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Inicio.this, Registro.class);
+                Intent i = new Intent(Inicio.this, IncidenciaDirecta.class);
                 startActivity(i);
-                finish();
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Inicio.this, IncidenciaEscrita.class);
+                startActivity(i);
             }
         });
     }
